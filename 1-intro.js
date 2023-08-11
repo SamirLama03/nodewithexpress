@@ -5,4 +5,4 @@ if (amount <= 10) {
   console.log("not valid");
 }
 
-console.log("my first node app!!!");
+console.log("my node app!!!");
