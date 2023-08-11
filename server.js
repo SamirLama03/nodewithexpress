@@ -1,14 +1,17 @@
-// Import the http module
-const http = require("http");
+const os = require("os");
+const path = require("path");
+const math = require("./math");
 
-// Create a server
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { "Content-Type": "text/plain" });
-  res.end("Hello, Node.js!");
-});
+console.log(math.add(2, 3));
 
-// Listen on a specific port
-const port = 3000;
-server.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+// console.log(os.type());
+// console.log(os.version());
+// console.log(os.homedir());
+
+// console.log(__dirname);
+// console.log(__filename);
+// console.log(path.dirname(__filename));
+// console.log(path.basename(__filename));
+// console.log(path.extname(__filename));
+
+// console.log(path.parse(__filename));
